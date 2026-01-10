@@ -1,0 +1,197 @@
+/* Modern Minimalist Banking Style */
+:root {
+    --primary-color: #2563eb; /* Royal Blue */
+    --primary-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h1 { text-align: center; color: var(--primary-color); }
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+.alert {
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.alert-error {
+    background-color: #fef2f2;
+    color: var(--error-color);
+    border: 1px solid #fecaca;
+}
+
+.alert-success {
+    background-color: #ecfdf5;
+    color: var(--success-color);
+    border: 1px solid #a7f3d0;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    text-align: center;
+}
+
+.balance-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.transaction-list {
+    list-style: none;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-info h4 {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.transaction-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.amount {
+    font-weight: 600;
+}
+
+.amount.plus { color: var(--success-color); }
+.amount.minus { color: var(--error-color); }
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.user-welcome {
+    font-weight: 600;
+}
+
+.logout-link {
+    color: var(--error-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
