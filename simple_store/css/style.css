@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfbf7;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #f57c00, #ff9800);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 1.05rem;
+}
+
+nav a:hover {
+    color: #f57c00;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 3px solid #ffe0b2;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    text-align: right;
+}
+
+table th {
+    background-color: #fff3e0;
+    color: #e65100;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background-color: #fff8e1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f57c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(245, 124, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #ef6c00;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #757575;
+    box-shadow: 0 2px 5px rgba(117, 117, 117, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #616161;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge-discount {
+    background-color: #ffe0b2;
+    color: #e65100;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Fix padding issue */
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #f57c00;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(245, 124, 0, 0.1);
+}
+
+.actions-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
